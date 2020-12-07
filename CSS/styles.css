@@ -27,6 +27,7 @@
   --hero-background: #2f303a;
   --team-background: #f5f4fa;
   --card-background: #eeeeee;
+  --border-color: #ececec;
 }
 
 /* HEADER */
@@ -51,7 +52,7 @@
   overflow: hidden;
 }
 
-.img {
+img {
   display: block;
   max-width: 100%;
   height: auto;
@@ -65,6 +66,14 @@
 
 .link {
   display: block;
+}
+
+.header {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.header a {
+  display: inline-block;
 }
 
 .header-nav a.logo {
@@ -301,6 +310,8 @@ section {
 }
 
 .team .item {
+  width: 270px;
+  justify-content: center;
   background: var(--primary-background);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -313,11 +324,12 @@ section {
 
 .team-description {
   margin: 0;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px 58px 30px 58px;
 }
 
 .team-member {
+  margin: 0;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -325,6 +337,7 @@ section {
   text-align: center;
 }
 .team-position {
+  margin: 0;
   color: var(--secondary-text-color);
   font-weight: 400;
   font-size: 16px;
@@ -340,6 +353,12 @@ section {
 }
 
 .flex-footer {
+  /* добавила свойства .container */
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
   display: flex;
   flex-direction: column;
   padding-top: 60px;
@@ -386,20 +405,11 @@ section {
   color: var(--primary-text-color);
 }
 
-/* Я знаю, что Репета говорил делать 
-margin-bottom:50px, но у меня 2 секции, а между
-секциями мы ставим паддинги, правильно? Или как
-сделать 1 секцию, не сломав утвержденную
-во 2 ДЗ вёрстку? */
-.main-nav .container {
-  padding-bottom: 50px;
-}
-
 .main-nav.list {
+  margin: 0;
+  margin-bottom: 50px;
   display: flex;
   justify-content: center;
-  margin: 0;
-  padding: 0;
 }
 
 .main-nav .item:not(:last-child) {
@@ -442,11 +452,7 @@ margin-bottom:50px, но у меня 2 секции, а между
   text-align: center;
 }
 
-.projects.container {
-  padding-top: 0;
-}
-
-.projects .list {
+.projects.list {
   display: flex;
   flex-wrap: wrap;
 }
@@ -458,7 +464,6 @@ margin-bottom:50px, но у меня 2 секции, а между
   width: 370px;
   background: var(--primary-background);
   border: 1px solid var(--card-background);
-  box-sizing: border-box;
 }
 
 .projects .item:nth-child(3n) {
@@ -470,7 +475,7 @@ margin-bottom:50px, но у меня 2 секции, а между
 }
 
 .projects-name {
-  margin: 20px 24px;
+  padding: 20px 24px;
 }
 
 .projects-title {
