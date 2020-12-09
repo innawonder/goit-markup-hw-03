@@ -68,7 +68,7 @@ img {
   display: block;
 }
 
-.header {
+header {
   border-bottom: 1px solid var(--border-color);
 }
 
@@ -130,8 +130,6 @@ body {
 
 .site-nav.list {
   display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .site-nav .item:not(:last-child),
@@ -139,6 +137,8 @@ body {
   margin-right: 50px;
 }
 .site-nav a {
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-family: Roboto, sans-serif;
   color: var(--primary-text-color);
   font-weight: 500;
@@ -161,11 +161,11 @@ body {
 .contacts.list {
   display: flex;
   margin-left: auto;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .contacts a {
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--secondary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -324,7 +324,7 @@ section {
 
 .team-description {
   margin: 0;
-  padding: 30px 58px 30px 58px;
+  padding: 30px 30px;
 }
 
 .team-member {
@@ -479,6 +479,8 @@ section {
 }
 
 .projects-title {
+  margin: 0;
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -486,6 +488,7 @@ section {
 }
 
 .projects-description {
+  margin: 0;
   color: var(--secondary-text-color);
   font-weight: 400;
   font-size: 16px;
